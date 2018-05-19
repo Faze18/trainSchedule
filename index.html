@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+</head>
+<body>
+<!--jumbotron up top-->
+<!--blank card with the title Current Train Scheudle-->
+<!--add train form card, title Add train, 4 boxes and a submit button-->
+
+<div class="container">
+    <div class="row" id="header">
+        <div class="col-md-12">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                      <h1 class="display-4">Train Schedule</h1>
+                      <p class="lead">Always on Time, Guaranteed. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" id="trainSchedule">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    Employee Workpage
+                </div>
+                <div class="card-body">
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="tableInfo">
+                                    <!-- <div id="tableInfo"></div> -->
+                                </tbody>
+                              </table>
+
+                </div>
+                </div>
+            </div>
+        </div>
+<br>
+    <div class="row" id="Add Train">
+        <div class="col-md-12">
+            <div class="card">
+
+                <div class="card-header">
+                    Add an employee
+                </div>
+
+                <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                  <label for="name">Train Name</label>
+                                  <input type="text" class="form-control" id="name">
+
+                            </div>
+
+                            <div class="form-group">
+                                  <label for="destination">Destination</label>
+                                  <input type="text" class="form-control" id="destination">
+                            </div>
+
+                            <div class="form-group">
+                                    <label for="firstTime">First Train Time HH:MM</label>
+                                    <input type="text" class="form-control" id="firstTime">
+                              </div>
+
+                              <div class="form-group">
+                                    <label for="frequency">Frequency</label>
+                                    <input type="text" class="form-control" id="frequency">
+                              </div>
+
+                            <button id = "submit"type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+<script src="assets/javascript.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</body>
+</html>
